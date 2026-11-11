@@ -1,0 +1,920 @@
+/* ==========================================================================
+   Hero Section Block - Templates 11 to 20
+   Styles are strictly namespaced with tpl-11- to tpl-20- prefixes
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   11: Fashion Brand (tpl-11-fashion)
+   -------------------------------------------------------------------------- */
+.tpl-11-fashion {
+  --fsh-bg: #f8f6f0;
+  --fsh-text: #1a1918;
+  --fsh-muted: #787571;
+  --fsh-border: #e3ded5;
+
+  background-color: var(--fsh-bg);
+  color: var(--fsh-text);
+  padding: 100px 32px 120px;
+  position: relative;
+  font-family: var(--hsb-font-serif);
+}
+
+.tpl-11-fashion__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.tpl-11-fashion__season {
+  font-family: var(--hsb-font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--fsh-muted);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.tpl-11-fashion__title {
+  font-size: clamp(48px, 6vw, 78px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.tpl-11-fashion__title em {
+  font-style: italic;
+  font-family: var(--hsb-font-editorial);
+}
+
+.tpl-11-fashion__desc {
+  font-family: var(--hsb-font-sans);
+  font-size: 16px;
+  color: var(--fsh-muted);
+  line-height: 1.7;
+  max-width: 440px;
+  margin-bottom: 36px;
+}
+
+.tpl-11-fashion__cta {
+  font-family: var(--hsb-font-sans);
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 2px solid var(--fsh-text);
+  padding-bottom: 6px;
+  transition: gap 0.2s ease;
+}
+
+.tpl-11-fashion__cta:hover {
+  gap: 22px;
+}
+
+.tpl-11-fashion__gallery {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.tpl-11-fashion__img-primary {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tpl-11-fashion__img-secondary {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 860px) {
+  .tpl-11-fashion__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   12: Luxury Brand (tpl-12-luxury)
+   -------------------------------------------------------------------------- */
+.tpl-12-luxury {
+  --lux-bg: #090a0f;
+  --lux-gold: #c5a880;
+  --lux-text: #f5f5f7;
+  --lux-muted: #8e8d94;
+
+  background-color: var(--lux-bg);
+  color: var(--lux-text);
+  padding: 120px 24px 130px;
+  position: relative;
+  text-align: center;
+  font-family: var(--hsb-font-serif);
+}
+
+.tpl-12-luxury__radial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(197, 168, 128, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tpl-12-luxury__container {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.tpl-12-luxury__pretitle {
+  font-family: var(--hsb-font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--lux-gold);
+  margin-bottom: 24px;
+}
+
+.tpl-12-luxury__title {
+  font-size: clamp(44px, 6.5vw, 76px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+.tpl-12-luxury__desc {
+  font-family: var(--hsb-font-sans);
+  font-size: 17px;
+  color: var(--lux-muted);
+  max-width: 620px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.tpl-12-luxury__btn {
+  font-family: var(--hsb-font-sans);
+  display: inline-block;
+  border: 1px solid var(--lux-gold);
+  color: var(--lux-gold);
+  padding: 14px 36px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tpl-12-luxury__btn:hover {
+  background: var(--lux-gold);
+  color: #000000;
+}
+
+/* --------------------------------------------------------------------------
+   13: Real Estate (tpl-13-realestate)
+   -------------------------------------------------------------------------- */
+.tpl-13-realestate {
+  --re-bg: #0f172a;
+  --re-text: #ffffff;
+  --re-gold: #e2b97f;
+
+  position: relative;
+  min-height: 640px;
+  padding: 120px 24px 100px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--re-text);
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-13-realestate__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.tpl-13-realestate__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.tpl-13-realestate__badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(226, 185, 127, 0.2);
+  border: 1px solid var(--re-gold);
+  color: var(--re-gold);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.tpl-13-realestate__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(38px, 5.2vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  max-width: 820px;
+}
+
+.tpl-13-realestate__search-bar {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr auto;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+}
+
+.tpl-13-realestate__field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.tpl-13-realestate__field select,
+.tpl-13-realestate__field input {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  outline: none;
+  background: transparent;
+}
+
+.tpl-13-realestate__search-btn {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.tpl-13-realestate__search-btn:hover {
+  background: #334155;
+}
+
+@media (max-width: 860px) {
+  .tpl-13-realestate__search-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   14: Architecture & Interior Design (tpl-14-architecture)
+   -------------------------------------------------------------------------- */
+.tpl-14-architecture {
+  --arch-bg: #ffffff;
+  --arch-text: #111111;
+  --arch-muted: #666666;
+  --arch-border: #e5e5e5;
+
+  background-color: var(--arch-bg);
+  color: var(--arch-text);
+  padding: 96px 32px 110px;
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-14-architecture__container {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.tpl-14-architecture__label {
+  font-family: var(--hsb-font-mono);
+  font-size: 12px;
+  color: var(--arch-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 24px;
+}
+
+.tpl-14-architecture__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(38px, 4.6vw, 58px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.tpl-14-architecture__tabs {
+  display: flex;
+  gap: 12px;
+  margin: 32px 0;
+}
+
+.tpl-14-architecture__tab {
+  font-family: var(--hsb-font-mono);
+  font-size: 13px;
+  padding: 8px 16px;
+  border: 1px solid var(--arch-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tpl-14-architecture__tab.active {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+.tpl-14-architecture__img-wrap {
+  position: relative;
+}
+
+.tpl-14-architecture__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 860px) {
+  .tpl-14-architecture__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   15: Restaurant and Food (tpl-15-restaurant)
+   -------------------------------------------------------------------------- */
+.tpl-15-restaurant {
+  --rst-bg: #111a16;
+  --rst-gold: #e5b869;
+  --rst-text: #f9f8f6;
+  --rst-muted: #a3b0a7;
+
+  background-color: var(--rst-bg);
+  color: var(--rst-text);
+  padding: 100px 24px 120px;
+  font-family: var(--hsb-font-serif);
+}
+
+.tpl-15-restaurant__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.tpl-15-restaurant__badge {
+  font-family: var(--hsb-font-sans);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--rst-gold);
+  margin-bottom: 20px;
+}
+
+.tpl-15-restaurant__title {
+  font-size: clamp(42px, 5.5vw, 66px);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.tpl-15-restaurant__desc {
+  font-family: var(--hsb-font-sans);
+  font-size: 17px;
+  color: var(--rst-muted);
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+/* Reservation widget */
+.tpl-15-restaurant__booking {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(229, 184, 105, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-15-restaurant__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tpl-15-restaurant__field label {
+  display: block;
+  font-size: 11px;
+  color: var(--rst-gold);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.tpl-15-restaurant__field input,
+.tpl-15-restaurant__field select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.tpl-15-restaurant__btn {
+  width: 100%;
+  background: var(--rst-gold);
+  color: #111a16;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.tpl-15-restaurant__btn:hover {
+  opacity: 0.9;
+}
+
+.tpl-15-restaurant__img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 860px) {
+  .tpl-15-restaurant__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   16: Travel and Tourism (tpl-16-travel)
+   -------------------------------------------------------------------------- */
+.tpl-16-travel {
+  --trv-bg: #0a1118;
+  --trv-teal: #14b8a6;
+  --trv-text: #ffffff;
+
+  position: relative;
+  min-height: 640px;
+  padding: 120px 24px 100px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--trv-text);
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-16-travel__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 17, 24, 0.6) 0%, rgba(10, 17, 24, 0.85) 100%);
+}
+
+.tpl-16-travel__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.tpl-16-travel__tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--trv-teal);
+  margin-bottom: 20px;
+}
+
+.tpl-16-travel__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(40px, 6vw, 70px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.tpl-16-travel__lead {
+  font-size: 19px;
+  max-width: 650px;
+  margin: 0 auto 36px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.tpl-16-travel__cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tpl-16-travel__btn {
+  background: var(--trv-teal);
+  color: #000000;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform 0.2s ease;
+}
+
+.tpl-16-travel__btn:hover {
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   17: Fitness and Gym (tpl-17-fitness)
+   -------------------------------------------------------------------------- */
+.tpl-17-fitness {
+  --fit-bg: #09090b;
+  --fit-neon: #ccff00;
+  --fit-text: #ffffff;
+  --fit-muted: #a1a1aa;
+
+  background-color: var(--fit-bg);
+  color: var(--fit-text);
+  padding: 100px 24px 120px;
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-17-fitness__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.tpl-17-fitness__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(204, 255, 0, 0.15);
+  border: 1px solid var(--fit-neon);
+  border-radius: 4px;
+  color: var(--fit-neon);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.tpl-17-fitness__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(42px, 5.5vw, 68px);
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.tpl-17-fitness__title span {
+  color: var(--fit-neon);
+}
+
+.tpl-17-fitness__desc {
+  font-size: 17px;
+  color: var(--fit-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.tpl-17-fitness__btn {
+  background: var(--fit-neon);
+  color: #000000;
+  padding: 16px 36px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.tpl-17-fitness__btn:hover {
+  transform: translateY(-2px);
+}
+
+.tpl-17-fitness__img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: contrast(110%);
+}
+
+@media (max-width: 860px) {
+  .tpl-17-fitness__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   18: Healthcare and Medical (tpl-18-healthcare)
+   -------------------------------------------------------------------------- */
+.tpl-18-healthcare {
+  --med-bg: #f0fdf4;
+  --med-card: #ffffff;
+  --med-primary: #059669;
+  --med-text: #064e3b;
+  --med-dark: #0f172a;
+
+  background-color: var(--med-bg);
+  color: var(--med-dark);
+  padding: 96px 24px 110px;
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-18-healthcare__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.tpl-18-healthcare__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tpl-18-healthcare__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(38px, 4.8vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.tpl-18-healthcare__title span {
+  color: var(--med-primary);
+}
+
+.tpl-18-healthcare__desc {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.tpl-18-healthcare__btn {
+  background: var(--med-primary);
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.tpl-18-healthcare__btn:hover {
+  background: #047857;
+}
+
+.tpl-18-healthcare__card {
+  background: var(--med-card);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.08);
+}
+
+.tpl-18-healthcare__img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+@media (max-width: 860px) {
+  .tpl-18-healthcare__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   19: Online Education (tpl-19-education)
+   -------------------------------------------------------------------------- */
+.tpl-19-education {
+  --edu-bg: #ffffff;
+  --edu-indigo: #4338ca;
+  --edu-text: #1e1b4b;
+  --edu-muted: #6b7280;
+
+  background-color: var(--edu-bg);
+  color: var(--edu-text);
+  padding: 96px 24px 110px;
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-19-education__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tpl-19-education__badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #e0e7ff;
+  color: var(--edu-indigo);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.tpl-19-education__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 860px;
+  margin: 0 auto 20px;
+}
+
+.tpl-19-education__search {
+  max-width: 580px;
+  margin: 36px auto;
+  display: flex;
+  background: #f3f4f6;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.tpl-19-education__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 16px;
+  font-size: 15px;
+  outline: none;
+}
+
+.tpl-19-education__search-btn {
+  background: var(--edu-indigo);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   20: Course and Coaching (tpl-20-coaching)
+   -------------------------------------------------------------------------- */
+.tpl-20-coaching {
+  --cch-bg: #0f172a;
+  --cch-amber: #f59e0b;
+  --cch-text: #f8fafc;
+  --cch-muted: #94a3b8;
+
+  background-color: var(--cch-bg);
+  color: var(--cch-text);
+  padding: 100px 24px 120px;
+  font-family: var(--hsb-font-sans);
+}
+
+.tpl-20-coaching__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.tpl-20-coaching__badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--cch-amber);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tpl-20-coaching__title {
+  font-family: var(--hsb-font-heading);
+  font-size: clamp(38px, 4.6vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+/* Live Countdown Box */
+.tpl-20-coaching__timer-card {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+}
+
+.tpl-20-coaching__timer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.tpl-20-coaching__time-box {
+  background: #0f172a;
+  padding: 14px 8px;
+  border-radius: 10px;
+}
+
+.tpl-20-coaching__time-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--cch-amber);
+}
+
+.tpl-20-coaching__time-lbl {
+  font-size: 11px;
+  color: var(--cch-muted);
+  text-transform: uppercase;
+}
+
+.tpl-20-coaching__btn {
+  background: var(--cch-amber);
+  color: #0f172a;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: opacity 0.2s ease;
+}
+
+.tpl-20-coaching__btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 860px) {
+  .tpl-20-coaching__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section Block — 30 Premium Templates Library</title>
+  <meta name="description" content="Explore 30 commercially valuable, production-grade Hero Section templates designed for the Hero Section Block WordPress plugin. Built with HTML5, Vanilla CSS, and JavaScript.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><rect width='24' height='24' rx='6' fill='%236366f1'/><path d='M7 17L17 7M17 7H7M17 7V17' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/templates-common.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body class="gallery-page">
+
+  <!-- Top Navigation -->
+  <nav class="gal-nav" aria-label="Main Navigation">
+    <div class="gal-nav__inner">
+      <div class="gal-nav__brand">
+        <div class="gal-nav__logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <div>
+          <div class="gal-nav__title">Hero Section Block</div>
+        </div>
+        <span class="gal-nav__plugin-badge">Pro Template Library</span>
+      </div>
+
+      <div class="gal-nav__links">
+        <a href="https://wordpress.org/plugins/hero-section-block/" target="_blank" rel="noopener noreferrer" class="gal-nav__link-btn">
+          <span>WordPress.org Plugin</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase Hero Banner -->
+  <header class="gal-hero">
+    <div class="gal-hero__ambient" aria-hidden="true"></div>
+
+    <div class="gal-hero__pill">
+      <span>★ 30 Commercial-Grade Hero Section Templates</span>
+    </div>
+
+    <h1 class="gal-hero__title">
+      Turn Any WordPress Website Into A <br><span class="gal-hero__title-gradient">High-Converting Masterpiece</span>
+    </h1>
+
+    <p class="gal-hero__desc">
+      A curated collection of 30 distinct, commercially ready Hero Section designs crafted for the <strong>Hero Section Block</strong> WordPress plugin. Built with semantic HTML5, modular CSS, and responsive Vanilla JS.
+    </p>
+
+    <!-- Metrics Bar -->
+    <div class="gal-metrics">
+      <div class="gal-metrics__item">
+        <span class="gal-metrics__num">30</span>
+        <span class="gal-metrics__lbl">Unique Designs</span>
+      </div>
+      <div class="gal-metrics__item">
+        <span class="gal-metrics__num">6</span>
+        <span class="gal-metrics__lbl">Commercial Categories</span>
+      </div>
+      <div class="gal-metrics__item">
+        <span class="gal-metrics__num">100%</span>
+        <span class="gal-metrics__lbl">Gutenberg Block Ready</span>
+      </div>
+      <div class="gal-metrics__item">
+        <span class="gal-metrics__num">0</span>
+        <span class="gal-metrics__lbl">Framework Dependencies</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Controls Toolbar -->
+  <section class="gal-toolbar" aria-label="Template Controls">
+    <div class="gal-toolbar__top">
+      <div class="gal-categories" role="tablist">
+        <button type="button" class="gal-cat-btn active" data-category="all">All Templates (30)</button>
+        <button type="button" class="gal-cat-btn" data-category="saas">SaaS & Software</button>
+        <button type="button" class="gal-cat-btn" data-category="ai">AI & Tech</button>
+        <button type="button" class="gal-cat-btn" data-category="creative">Creative & Agency</button>
+        <button type="button" class="gal-cat-btn" data-category="business">Corporate & Finance</button>
+        <button type="button" class="gal-cat-btn" data-category="lifestyle">Lifestyle & Luxury</button>
+        <button type="button" class="gal-cat-btn" data-category="media">Media & Editorial</button>
+      </div>
+
+      <div class="gal-search-wrap">
+        <svg class="gal-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search-input" class="gal-search-input" placeholder="Search templates, features, or keywords..." aria-label="Search templates">
+      </div>
+    </div>
+
+    <div class="gal-status-line">
+      <span id="template-count">Showing 30 templates</span>
+      <span>Click any template to test live Desktop, Tablet, and Mobile responsiveness</span>
+    </div>
+  </section>
+
+  <!-- Showcase Cards Grid -->
+  <main class="gal-grid" id="gallery-grid" aria-label="Template Grid"></main>
+
+  <!-- Responsive Device Simulator Modal -->
+  <div class="gal-modal" id="preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="gal-modal__header">
+      <div class="gal-modal__info">
+        <span class="gal-modal__tag" id="modal-tag">Category</span>
+        <h2 class="gal-modal__title" id="modal-title">Template Title</h2>
+      </div>
+
+      <!-- Viewport Device Switcher -->
+      <div class="gal-modal__devices" role="group" aria-label="Device Switcher">
+        <button type="button" class="gal-device-btn active" data-device="desktop" title="Desktop Viewport (1440px)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Desktop</span>
+        </button>
+        <button type="button" class="gal-device-btn" data-device="tablet" title="Tablet Viewport (768px)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          <span>Tablet</span>
+        </button>
+        <button type="button" class="gal-device-btn" data-device="mobile" title="Mobile Viewport (390px)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          <span>Mobile</span>
+        </button>
+      </div>
+
+      <div class="gal-modal__controls">
+        <button type="button" class="gal-modal__btn" id="modal-copy-code">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>Inspect Code</span>
+        </button>
+        <a id="modal-open-external" href="#" target="_blank" class="gal-modal__btn" title="Open Standalone in New Tab">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          <span>Full Page</span>
+        </a>
+        <button type="button" class="gal-modal__close" id="modal-close" aria-label="Close Preview" title="Close (Esc)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Frame Workspace -->
+    <div class="gal-modal__workspace">
+      <div class="gal-modal__frame-container desktop" id="frame-container">
+        <iframe id="modal-iframe" class="gal-modal__iframe" src="about:blank" title="Live Hero Template Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code Inspector Modal -->
+  <div class="gal-code-modal" id="code-modal" role="dialog" aria-modal="true" aria-label="Code Inspector">
+    <div class="gal-code-box">
+      <div class="gal-code-header">
+        <div class="gal-code-title">Clean Semantic HTML (Ready for Gutenberg Pattern Integration)</div>
+        <button type="button" class="gal-modal__close" id="code-modal-close" aria-label="Close Code Modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <pre class="gal-code-content"><code id="code-content"></code></pre>
+      <div class="gal-code-footer">
+        <button type="button" class="gal-card__btn-view" id="code-copy-action">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span>Copy HTML to Clipboard</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/templates-data.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

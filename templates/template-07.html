@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio — Premium Hero Section</title>
+  <link rel="stylesheet" href="../css/templates-common.css">
+  <link rel="stylesheet" href="../css/templates/tpl-01-10.css">
+</head>
+<body>
+  <header class="tpl-07-developer">
+      <div class="tpl-07-developer__container">
+        <div>
+          <div class="tpl-07-developer__status-bar">
+            <span>● 100% test coverage • 0 active incidents</span>
+          </div>
+
+          <h1 class="tpl-07-developer__title">
+            Architecting <span>Resilient Systems</span> That Handle Billions of Events.
+          </h1>
+
+          <p class="tpl-07-developer__desc">
+            Hi, I’m Alex Chen. Senior Infrastructure Architect specializing in lock-free concurrency, distributed consensus (Raft/Paxos), and multi-region Kubernetes topologies.
+          </p>
+
+          <div class="tpl-07-developer__tech-stack">
+            <span class="tpl-07-developer__tech-pill">Go</span>
+            <span class="tpl-07-developer__tech-pill">Rust</span>
+            <span class="tpl-07-developer__tech-pill">Kubernetes</span>
+            <span class="tpl-07-developer__tech-pill">eBPF</span>
+            <span class="tpl-07-developer__tech-pill">gRPC</span>
+            <span class="tpl-07-developer__tech-pill">PostgreSQL</span>
+          </div>
+
+          <div class="tpl-07-developer__actions">
+            <a href="#github" class="tpl-07-developer__btn">Inspect GitHub Repos</a>
+            <a href="#cv" style="color:#58a6ff;font-size:14px;display:flex;align-items:center;gap:6px;">Read Whitepapers →</a>
+          </div>
+        </div>
+
+        <div class="tpl-07-developer__ide">
+          <div class="tpl-07-developer__ide-header">
+            <div class="tpl-07-developer__ide-tabs">
+              <span class="tpl-07-developer__ide-tab active" data-lang="go">server.go</span>
+              <span class="tpl-07-developer__ide-tab" data-lang="yaml">cluster.yaml</span>
+              <span class="tpl-07-developer__ide-tab" data-lang="rust">buffer.rs</span>
+            </div>
+            <span style="font-size:11px;color:#8b949e;">UTF-8 • LF</span>
+          </div>
+
+          <pre class="tpl-07-developer__code-block"><code><span class="tpl-07-developer__keyword">package</span> main
+
+<span class="tpl-07-developer__keyword">import</span> (
+	<span class="tpl-07-developer__str">"fmt"</span>
+	<span class="tpl-07-developer__str">"net/http"</span>
+)
+
+<span class="tpl-07-developer__keyword">func</span> <span class="tpl-07-developer__fn">Handler</span>(w http.ResponseWriter, r *http.Request) {
+	fmt.<span class="tpl-07-developer__fn">Fprintf</span>(w, <span class="tpl-07-developer__str">"Cluster status: healthy | Latency: 0.8ms"</span>)
+}</code></pre>
+        </div>
+      </div>
+    </header>
+  <script src="../js/templates-interactions.js"></script>
+</body>
+</html>
